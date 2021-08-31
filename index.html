@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Google Search API" />
+
+   <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   
+  
+   <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous"
+  />
+
+   <link rel="stylesheet" href="style.css" />
+   
+  <link rel="shortcut icon" href="./img/search.png" />
+  <link rel="icon" href="./img/search.png" type="image/x-icon" />
+</head>
+
+<title>Google</title>
+
+<body class="theme-change-div theme-change-text bg-light">
+
+<div class="fixed-top mb-5">
+    <form class="theme-change-div bg-light d-flex flex-column align-items-center" id="main-form" >
+        <img src="./img/google-logo.png" class="mt-4 mb-2" alt="" style="height: 5vh; width: 15vh;">
+        <div class="w-50 input-group mb-3">
+            <input type="text" class="form-control form-control-lg shadow" name="searchQ" id="searchQ" required autocomplete="off">
+            <img src="./img/mic.png" alt="" id="audio-icon" style="height: 30px; width: 30px;">
+            <i class="fas fa-search text-muted fa-md" id="search-icon"></i>
+        </div>
+    </form>
+    <button class="theme-change-div theme-change-text bg-dark pt-2 btn btn-sm" id="dark-mode-btn" title="Change Theme">
+        <span class="px-1" id="sun-icon"><img src="./img/light-mode.png" alt="light-mode" style="height: 22px; width: 22px;"></span>
+        <span class="px-1" id="moon-icon"><img src="./img/dark-mode.png" alt="dark-mode" style="height: 22px; width: 22px;"></span>
+        <span class="badge badge-pill badge-danger" id="beta" style="position: absolute; right: -15px; top: -10px;">Beta</span>
+    </button>
+</div>
+
+
+<main class="m-3 m-md-4 m-sm-4" style="margin-top: 150px !important;">
+    <hr class="bg-secondary mx-4 rounded-lg">
+
+
+   <div id="results-div" class="theme-change-text text-dark d-flex flex-column justify-content-center align-content-center align-items-center"></div>
+    
+</main>
+
+   
+</body>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="./app.js"></script>
+</html>
